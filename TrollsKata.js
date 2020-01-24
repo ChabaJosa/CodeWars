@@ -3,3 +3,6 @@ function disemvowel(str) {
     str = str.replace(regEx,"")
     return str
   }
+
+  disemvowel("This website is for losers LOL!")
+  // Prints out ths wbst s fr lsrs LL!
