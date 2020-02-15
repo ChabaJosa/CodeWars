@@ -1,9 +1,8 @@
 function expandedForm(num) {
-    return num.toString().split("").map(eachNum => {
-      return Math.ceil(num/1000)*1000
-    }
-    )
-  
+    let str = num+'';
+    return str.split('').map((item, index)=>{
+      if(item>0){
+        return item * Math.pow(10, (str.length - index -1))
+      }
+    }).filter((i)=>i).join(' + ')
   }
-  
-  expandedForm(4500)
