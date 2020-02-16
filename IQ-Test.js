@@ -6,7 +6,7 @@ function iqTest(numbers){
     let weirdNumberEven=0
     let weirdNumberOdd=0
   
-    
+    console.log("Whatsaupp")
     for (i in arr){
   
       arr[i]=Number(arr[i])
